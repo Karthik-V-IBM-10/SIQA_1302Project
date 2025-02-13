@@ -22,6 +22,11 @@ packages:
   gitUrl: https://github.webmethods.io/mjan
   gitUsername: kvv
   gitBranch: main
+- name: SIQACloudStreamsTests
+  gitServerName: SIQA_kvv_wm_io
+  gitUrl: https://github.webmethods.io/mjan
+  gitUsername: kvv
+  gitBranch: main
 services:
 - serviceName: project.siqa_1302.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
   packages:
@@ -129,9 +134,9 @@ configurationVariables:
   : "0"
   ? artConnection.SIQA_1302Project.project.siqa_1302.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolIncrementSize
   : "1"
-  jdbc.jdbcTestPool.snoopparms: ddtdbg.ProtocolTraceEnable=true;ddtdbg.ProtocolTraceMaxline=16;ddtdbg.ProtocolTraceLocation=logs/snoop/jdbcTestPool.log;ddtdbg.ProtocolTraceShowTime=true
   ? artConnection.SIQA_1302Project.project.siqa_1302.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
   : "false"
+  jdbc.jdbcTestPool.snoopparms: ddtdbg.ProtocolTraceEnable=true;ddtdbg.ProtocolTraceMaxline=16;ddtdbg.ProtocolTraceLocation=logs/snoop/jdbcTestPool.log;ddtdbg.ProtocolTraceShowTime=true
   jdbc.jdbcTestPool.maxConns: "10"
   jdbc.jdbcTestPool.userid: root
   ? artConnection.SIQA_1302Project.project.siqa_1302.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.keyStore

@@ -18,21 +18,25 @@ packages:
   gitUsername: kvv
   gitBranch: main
 - name: SIQAJDBCAdapterTests
+  version: "1.0"
   gitServerName: SIQA_kvv_wm_io
   gitUrl: https://github.webmethods.io/mjan
   gitUsername: kvv
   gitBranch: main
 - name: SIQACloudStreamsTests
+  version: "1.0"
   gitServerName: SIQA_kvv_wm_io
   gitUrl: https://github.webmethods.io/mjan
   gitUsername: kvv
   gitBranch: main
 - name: DADA_GlobalVariable1
+  version: "1.0"
   gitServerName: SIQA_kvv_wm_io
   gitUrl: https://github.webmethods.io/mjan
   gitUsername: kvv
   gitBranch: main
 - name: JMSTest
+  version: "1.0"
   gitServerName: SIQAPsur
   gitUrl: https://github.com/prabhakarsag
   gitUsername: prabhakarsag
@@ -44,41 +48,109 @@ services:
     version: "1.0"
   - name: TPP_services_in_FCS
     version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.53
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: project.siqa_1302.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
   packages:
   - name: SIQA_1302Project
     version: "1.0"
   - name: TPP_services_in_FCS
     version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.53
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: project.siqa_1302.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:test
   packages:
   - name: SIQA_1302Project
     version: "1.0"
   - name: TPP_services_in_FCS
     version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.53
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: project.siqa_1302.integrations:AlertsCRTandERT
   packages:
   - name: SIQA_1302Project
     version: "1.0"
   - name: TPP_services_in_FCS
     version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.53
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: pub.alert:emit
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2033
+- serviceName: project.siqa_1302.integrations:JMSFlowTest
+  packages:
+  - name: SIQA_1302Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.53
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: publisher:publisher
+  packages:
+  - name: JMSTest
+    version: "1.0"
+- serviceName: pub.jms:send
   packages:
   - name: WmPublic
     version: 11.1.0.0.2033
@@ -88,20 +160,40 @@ services:
     version: "1.0"
   - name: TPP_services_in_FCS
     version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.53
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: project.siqa_1302.integrations:Sum
   packages:
   - name: SIQA_1302Project
     version: "1.0"
   - name: TPP_services_in_FCS
     version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.53
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: pub.math:addInts
   packages:
   - name: WmPublic
@@ -116,10 +208,20 @@ services:
     version: "1.0"
   - name: TPP_services_in_FCS
     version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.53
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: pub.string:stringToBytes
   packages:
   - name: WmPublic
@@ -133,29 +235,15 @@ services:
   - name: WmPublic
     version: 11.1.0.0.2033
 configurationVariables:
-  ? artConnection.SIQA_1302Project.project.siqa_1302.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
-  : tcp
-  jdbc.jdbcTestPool.waitingThread: "0"
-  jdbc.jdbcTestPool.minConns: "0"
-  jdbc.jdbcTestPool.expireTime: "60000"
   ? artConnection.SIQA_1302Project.project.siqa_1302.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupRetryCount
-  : "0"
-  ? artConnection.SIQA_1302Project.project.siqa_1302.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
   : "0"
   ? artConnection.SIQA_1302Project.project.siqa_1302.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolIncrementSize
   : "1"
-  ? artConnection.SIQA_1302Project.project.siqa_1302.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
-  : "false"
   jdbc.jdbcTestPool.snoopparms: ddtdbg.ProtocolTraceEnable=true;ddtdbg.ProtocolTraceMaxline=16;ddtdbg.ProtocolTraceLocation=logs/snoop/jdbcTestPool.log;ddtdbg.ProtocolTraceShowTime=true
   jdbc.jdbcTestPool.maxConns: "10"
   jdbc.jdbcTestPool.userid: root
-  ? artConnection.SIQA_1302Project.project.siqa_1302.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.keyStore
-  : ""
-  jdbc.jdbcTestPool.driverAlias: MySQL Database Java Connector Driver
   ? artConnection.SIQA_1302Project.project.siqa_1302.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
   : vmiboint01
-  ? artConnection.SIQA_1302Project.project.siqa_1302.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
-  : "{AES}B2Xqma4Ost5nVUiXctJydQ=="
   ? artConnection.SIQA_1302Project.project.siqa_1302.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.minimumPoolSize
   : "1"
   jdbc.jdbcTestPool.spyenabled: "false"
@@ -163,23 +251,37 @@ configurationVariables:
   : sa
   ? artConnection.SIQA_1302Project.project.siqa_1302.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
   : NO_TRANSACTION
-  ? artConnection.SIQA_1302Project.project.siqa_1302.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
-  : "10"
   jdbc.jdbcTestPool.snoopenabled: "false"
   ? artConnection.SIQA_1302Project.project.siqa_1302.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.driverType
   : Progress® DataDirect®
-  ? artConnection.SIQA_1302Project.project.siqa_1302.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
-  : "1433"
-  jdbc.jdbcTestPool.password: "{AES}er+I3U8nDVm8F4DBRST1+A=="
   jdbc.jdbcTestPool.spyparms: SpyAttributes=(log=(file)logs/spy/jdbcTestPool.log;logTName=yes;timestamp=yes)
-  jdbc.jdbcTestPool.dbURL: jdbc:mysql://mysql.test.local:3306/webm
-  jdbc.jdbcTestPool.poolThreshold: "0"
   ? artConnection.SIQA_1302Project.project.siqa_1302.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
   : "false"
   ? artConnection.SIQA_1302Project.project.siqa_1302.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
   : SIQACloud
   ? artConnection.SIQA_1302Project.project.siqa_1302.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
   : com.wm.dd.jdbcx.sqlserver.SQLServerDataSource
+  ? artConnection.SIQA_1302Project.project.siqa_1302.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
+  : tcp
+  jdbc.jdbcTestPool.waitingThread: "0"
+  jdbc.jdbcTestPool.minConns: "0"
+  jdbc.jdbcTestPool.expireTime: "60000"
+  ? artConnection.SIQA_1302Project.project.siqa_1302.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.SIQA_1302Project.project.siqa_1302.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
+  : "false"
+  ? artConnection.SIQA_1302Project.project.siqa_1302.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.keyStore
+  : ""
+  jdbc.jdbcTestPool.driverAlias: MySQL Database Java Connector Driver
+  ? artConnection.SIQA_1302Project.project.siqa_1302.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
+  : "{AES}B2Xqma4Ost5nVUiXctJydQ=="
+  ? artConnection.SIQA_1302Project.project.siqa_1302.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.SIQA_1302Project.project.siqa_1302.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
+  : "1433"
+  jdbc.jdbcTestPool.password: "{AES}er+I3U8nDVm8F4DBRST1+A=="
+  jdbc.jdbcTestPool.dbURL: jdbc:mysql://mysql.test.local:3306/webm
+  jdbc.jdbcTestPool.poolThreshold: "0"
   ? artConnection.SIQA_1302Project.project.siqa_1302.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupBackoffSecs
   : "10"
   ? artConnection.SIQA_1302Project.project.siqa_1302.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
